@@ -49,15 +49,23 @@ table {
 	border-spacing: 0;
 }
 
+*{
+    box-sizing: border-box;
+}
 /*
 
 Code Starts
 
 */
+@media screen and (max-width: 275px){
+
+    .topWrapper .myName {
+        font-size: 28px;
+    }
+}
 
 
-
-@media screen and (max-width: 395px){
+@media screen and (max-width: 650px){
 
     /*
 
@@ -72,30 +80,32 @@ Code Starts
 
     .topWrapper {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items:center;
-        height: 69px;
+        height: 80px;
         width: 100%;
+        margin-bottom: 50px;
     }
+ 
 
-    .topWrapper h3 {
-        font-size: 3rem;
+    .myName{
+        margin-right: 7.5%;
         line-height: 100%;
         display: inline-block;
-        width: 70%;
+        width: fit-content
     }
-
+    .lastInitial{
+        display:none;
+    }
     .dropDown {
         position: relative;
         width: 100%;
     }
-    
-      
+
     .dropDownContent {
         position: absolute;
-        top: 70px;
-        left: -400px;
-        min-width: 99%;
+        top: 80px;
+        min-width: 100%;
         z-index: 1;
       }
       
@@ -103,6 +113,8 @@ Code Starts
         display: block;
       }
 
+
+      
     /*
 
     Main Blurb Section Layout
@@ -115,7 +127,7 @@ Code Starts
     }
     .nathanImage{
         display: block;
-        width: 75%;
+        width: 60%;
     }
     .smallContainer{
         display:flex;
@@ -140,32 +152,39 @@ Code Starts
 
 
 
+
+
     /*
 
      Nav Menu Style 
 
     */
-
-    .topWrapper h3 {
-        font-size: 3rem;
+    html {
+        background-color: #E1E8ED;
+        font-size: 18px;
+    }
+    .topWrapper{
+        color: #E1E8ED;
+        background-color: #14171A;
+    }
+    .myName{
+        font-size: 2rem;
         line-height: 100%;
-        text-align: center;
+        text-align: right;
     }
     
     .dropButton {
-        background-color: white;
         border: none;
         margin-top:.5rem;
+        background-color: #14171A;
       }
     
     .dropButton img {
-        background-color: white;
+        background-color: #14171A;
+        height: 30px;
     }
-      
-    .dropDownContent {
-        transition: left 0.3s;
-        background-color: #f9f9f9;
-      }
+    
+
       
     .dropDownContent a {
         padding: 12px 16px;
@@ -177,9 +196,19 @@ Code Starts
         border-bottom: 1px solid black;
         font-size: 22px;
         line-height: 1.6rem;
+        background-color: #F5F8FA;
     }
 
 
+    .dropDownContent li {
+        opacity: 0; /* Initially hidden */
+        transform: translateX(-100%); /* Initially outside the viewport */
+        transition: opacity 0.5s, transform 0.5s;
+      }
+      .dropDownContent li.slide-in {
+        opacity: 1; /* Show the item */
+        transform: translateX(0); /* Slide it in from the left */
+      }
 
     /*
 
@@ -199,7 +228,7 @@ Code Starts
         border: 1px solid black;
     }
 
-    .mainBlurb h1, .mainBlurb h3, .mainBlurb .locationIcon .mainBlurb h4 {
+    .mainBlurb h1, .jobTitle, .mainBlurb .locationIcon .mainBlurb h4 {
         margin-top: .5rem;
         text-align: center;
     }
@@ -214,10 +243,6 @@ Code Starts
     .mainBlurb h4{
         text-align: center;
     }
-
-
-
-
     /*
 
      Sections Style Layout
@@ -236,5 +261,90 @@ Code Starts
     }
 }
 
+@media (min-width: 650px) {
+    .superWrapper {
+        display:flex;
+        flex-direction: row;
+        min-height: 100vh;
+        margin-bottom: 0;
+        background-color: #F5F8FA;
+    }
+    .leftWrapper {
+        min-width: 30%;
+        min-height: 100%;
+        background-color: #AAB8C2;
+        min-height: vh;
+        margin-bottom: 0;
+        display:flex;
+        flex-direction: column;
+
+    }
+    .dropDown{
+        order: 2;
+    }
+    .mainBlurb{
+        order: 1;
+    }
+    .nathanImage{
+        width: 70%;
+        border-radius: 50%;
+        display: block;
+        margin: 100px auto 25px auto;
+    }
+    .locationIcon{
+        width: 10px;
+    }
+    .jobTitle{
+        text-align: center;
+        line-height: 2rem;
+        font-size:1.5rem;
+    }
+    .smallContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        line-height: 2rem;
+        font-size:1.5rem;
+    }
+
+    .dropButton, .myName, .lastName{
+        display: none;
+    }
+    .dropDownContent{
+        line-height: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .rightWrapper {
+        min-width: 70%;
+        min-height: 100vh;
+        margin-top: 200px;
+    }
+}
+@media (min-width: 1100px){
+    .leftWrapper {
+        min-width: 25%;
+    }
+    .rightWrapper {
+        min-width: 75%;
+
+    }
+}
 
 
+    /*
+
+    Blue #1DA1F2
+
+    Black #14171A
+
+    Dark Gray #657786
+
+    Light Gray #AAB8C2
+
+    Extra Light Gray #E1E8ED
+
+    Extra Extra light gray #F5F8FA
+
+    */
