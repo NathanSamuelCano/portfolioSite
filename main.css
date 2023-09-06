@@ -65,7 +65,7 @@ Code Starts
 }
 
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 649px){
 
     /*
 
@@ -291,6 +291,15 @@ Code Starts
         display: block;
         margin: 100px auto 25px auto;
     }
+    .name2 {
+        text-align: center;
+        width: fit-content;
+        margin: 0 auto;
+        line-height: 2.5rem;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
     .locationIcon{
         width: 10px;
     }

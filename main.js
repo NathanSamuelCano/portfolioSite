@@ -1,4 +1,5 @@
 
+
 document.querySelector('#dropButton').addEventListener('click', function () {
     const listItems = document.querySelectorAll(".dropDownContent li");
     
@@ -14,3 +15,21 @@ document.querySelector('#dropButton').addEventListener('click', function () {
       }, delay);
     });
   });
+
+
+
+  window.addEventListener('resize', updateName);
+
+
+  function updateName(){
+    let width = window.innerWidth
+    if (width >= 650){
+      document.querySelector('.name2').innerHTML = 'Nathan Cano';
+      document.querySelector('.name2').style.display = 'block';
+
+    } else {
+      document.querySelector('.name2').style.display = 'none';
+    }
+  }
+
+  updateName();
