@@ -8,54 +8,135 @@
     <title>Document</title>
 </head>
 <body>
-    <div class = "superWrapper">
+
+<!--      Wrapps Everything              -->
+    <div class = "superWrapper" id = "home">
+<!--      Wrapps Left Section              -->
         <div class = "leftWrapper">
-            <nav class = "dropDown">
-                <div class = 'topWrapper'>
-                    <button class = "dropButton" id = "dropButton"><img src = "assets/dropDownIcon.svg"></button>
-                    <h3 class = "myName">Nathan <span class = "lastName">Cano</span></h3>
+<!--      Navigation Section              -->
+                <nav class = "nav" id = "nav">
+    <!--      Black Bar Section              -->
+                    <div class = 'topWrapper'>
+                        <button class = "navButton" id = "navButton"><img src = "assets/navIcon.svg"></button>
+                    </div>
+    <!--      List Content Section              -->
+                    <ul class = "navContent" id = "navContent">
+                        <li><a href = '#home'>Home</a></li>
+                        <li><a href = ''>Projects</a></li>
+                        <li><a href = ''>Experience</a></li>
+                        <li><a href = ''>Education</a></li>
+                    </ul>
+                </nav>
+<!--      Photo title location Section              -->           
+                <div class = "imageCont">
+                    <img src = "assets/nathanCanoPortrait.jpg" class = "nathanImage">
                 </div>
-                <ul class = "dropDownContent">
-                    <li><a href = ''>Bio</a></li>
-                    <li><a href = ''>Projects</a></li>
-                    <li><a href = ''>Experience</a></li>
-                    <li><a href = ''>Education</a></li>
-                </ul>
-            </nav>
-            <div class = "mainBlurb">
-                <img src = "assets/nathanCanoPortrait.jpg" class = "nathanImage">
-                <span class ="name2" ></span>
-                <h3 class = "jobTitle">Software Developer & Addiction Professional</h3>
+        </div>
+ <!--      Wraps Right Section              -->           
+
+        <div class = "sectionWrapper rightWrapper">
+ <!--      Bio             -->           
+            <section class = "bio">
+                <h2 class = "bioName">Nathan <span>Cano<span></h2>
+                <h3 class = "jobTitle">Software Developer</h3>
+                <h3 class = "email">nathanscano@icloud.com</h3>
                 <div class = 'smallContainer'>
                     <img src = "assets/location-dot-solid.svg" class = "locationIcon">
                     <h4>Los Angeles, Ca</h4>
                 </div>
-            </div>
-        </div>
-        <div class = "sectionWrapper rightWrapper">
-            <section>
-                <h2 id = "bio">Bio</h2>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus ab inventore sequi cumque architecto deserunt ipsam obcaecati quia. Vero, quas?
-                </p>
             </section>
+ <!--      Projects             -->           
             <section>
                 <h2 id = "projects">Projects</h2>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus ab inventore sequi cumque architecto deserunt ipsam obcaecati quia. Vero, quas?
+                    Lorem ipsum dolor sit amet consectetur adipisicing.
                 </p>
             </section>
+ <!--      Experience             -->           
             <section>
                 <h2 id = "experience">Experience</h2>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus ab inventore sequi cumque architecto deserunt ipsam obcaecati quia. Vero, quas?
-                </p>
+                <div class = "resParentCont">
+                    <div class = "r-left">
+                        <h3>Open Source Project Contributor</h3>
+                        <span>Project Name</span>
+                        <ul class = "res-bullet-points">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit..</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        </ul>
+                    </div>
+                    <div class = "r-right">
+                        <span>October 2023 - Present</span>
+                    </div>
+                </div>
+                <div class = "resParentCont">
+                    <div class = "r-left">
+                        <h3>Freelance Web Developer</h3>
+                        <span>Self-Employed</span>
+                        <ul class = "res-bullet-points">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit..</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        </ul>
+                    </div>
+                    <div class = "r-right">
+                        <span>September 2023 - Present</span>
+                    </div>
+                </div>
+                <div class = "resParentCont">
+                <div class = "resParentCont">
+                    <div class = "r-left">
+                        <h3>Program Director</h3>
+                        <span>Journey Hillside Tarzana</span>
+                        <ul class = "res-bullet-points" >
+                            <li>Responsible for the acquisition of numerous facility accredidations and certifications, including the Joint Commission, CARF-ASAM and DHCS compliance audits.</li>
+                            <li>Directed and supervised the administrative activities of all facility operations, including a team of 11 staff members.</li>
+                            <li>Create a clinical program of recovery and conduct recovery groups based on the following topics: Communication Skills, cognitive-behavioral interventions, relapse prevention, coping skills, chemical dependency, ACT principles, the 12 steps and more. </li>
+                        </ul>
+                    </div>
+                    <div class = "r-right">
+                        <span>August 2019 - Present</span>
+                    </div>
+                </div>
             </section>
+ <!--      Education             -->           
             <section>
                 <h2 id = "education">Education</h2>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus ab inventore sequi cumque architecto deserunt ipsam obcaecati quia. Vero, quas?
-                </p>
+                <div class = "resParentCont">
+                    <div class = "r-left">
+                        <h3>M.S. Addiction Counseling</h3>
+                        <span> Grand Canyon University</span>
+                    </div>
+                    <div class = "r-right">
+                        <span>February 2023</span>
+                    </div>
+                </div>
+                <div class = "resParentCont">
+                    <div class = "r-left">
+                        <h3>B.A. Honors in Psychology</h3>
+                        <span>California State University, Northridge</span>
+                    </div>
+                    <div class = "r-right">
+                        <span> December 2019</span>
+                    </div>
+                </div>
+                <div class = "resParentCont">
+                    <div class = "r-left">
+                        <h3>Anger Management - Certificate</h3>
+                        <span>Century Anger Management</span>
+                    </div>
+                    <div class = "r-right">
+                        <span>November 2023</span>
+                    </div>
+                </div>
+                <div class = "resParentCont">
+                    <div class = "r-left">
+                        <h3>Addiction Studies - Certificate</h3>
+                        <span>Breining Institute</span>
+                    </div>
+                    <div class = "r-right">
+                        <span>February 2019</span>
+                    </div>
             </section>
         </div>
     </div>

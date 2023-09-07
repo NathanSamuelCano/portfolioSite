@@ -1,35 +1,29 @@
+// Function to slide in the navigation menu items
+function slideInMenuItems() {
+  const navContent = document.querySelector('#navContent');
+  const navItems = navContent.querySelectorAll('li');
 
-
-document.querySelector('#dropButton').addEventListener('click', function () {
-    const listItems = document.querySelectorAll(".dropDownContent li");
-    
-    listItems.forEach(function (item, index) {
-      const delay = index * 50; // Delay each item by 50 milliseconds
-      
-      setTimeout(function () {
-        if (item.classList.contains("slide-in")) {
-          item.classList.remove("slide-in"); // Remove the class to reverse the animation
-        } else {
-          item.classList.add("slide-in"); // Add the class to animate
-        }
-      }, delay);
-    });
+  // Loop through each list item and apply the slide-in class
+  navItems.forEach((item, index) => {
+    setTimeout(() => {
+      item.classList.add('slide-in');
+    }, index * 100); // Delay each item by 100 milliseconds
   });
+}
 
+// Function to slide out the navigation menu items
+function slideOutMenuItems() {
+  const navContent = document.querySelector('#navContent');
+  const navItems = navContent.querySelectorAll('li');
 
+  // Loop through each list item and remove the slide-in class
+  navItems.forEach((item, index) => {
+    setTimeout(() => {
+      item.classList.remove('slide-in');
+    }, index * 100); // Delay each item by 100 milliseconds
+  });
+}
 
-  window.addEventListener('resize', updateName);
-
-
-  function updateName(){
-    let width = window.innerWidth
-    if (width >= 650){
-      document.querySelector('.name2').innerHTML = 'Nathan Cano';
-      document.querySelector('.name2').style.display = 'block';
-
-    } else {
-      document.querySelector('.name2').style.display = 'none';
-    }
-  }
-
-  updateName();
+// Add event listeners to the navButton
+document.querySelector('#navButton').addEventListener('mouseenter', slideInMenuItems);
+document.querySelector('#navButton').addEventListener('mouseleave', slideOutMenuItems);

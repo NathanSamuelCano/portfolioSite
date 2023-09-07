@@ -52,7 +52,7 @@ table {
 *{
     box-sizing: border-box;
 }
-/*
+/* /////////////////////////////////////////////////////////
 
 Code Starts
 
@@ -64,7 +64,8 @@ Code Starts
     }
 }
 
-
+/* /////////////////////////////////////////////////////////
+*/
 @media screen and (max-width: 649px){
 
     /*
@@ -73,8 +74,8 @@ Code Starts
 
     */
 
-    .dropDown {
-        margin: 0 auto .5rem auto;
+    .nav {
+        margin: 0 auto 0 auto;
     }
 
 
@@ -82,34 +83,23 @@ Code Starts
         display: flex;
         justify-content: space-between;
         align-items:center;
-        height: 80px;
+        height: 10vh;
         width: 100%;
-        margin-bottom: 50px;
     }
- 
 
-    .myName{
-        margin-right: 7.5%;
-        line-height: 100%;
-        display: inline-block;
-        width: fit-content
-    }
-    .lastInitial{
-        display:none;
-    }
-    .dropDown {
+    .nav {
         position: relative;
         width: 100%;
     }
 
-    .dropDownContent {
+    .navContent {
         position: absolute;
         top: 80px;
         min-width: 100%;
         z-index: 1;
       }
       
-    .dropDownContent a {
+    .navContent a {
         display: block;
       }
 
@@ -121,13 +111,42 @@ Code Starts
 
     */
 
-    .mainBlurb{
+    .imageCont{
         display: block;
+        height: 40vh;
         max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .nathanImage{
+        height: 80%;;
         display: block;
-        width: 60%;
+        border: 10px solid #657786;
+    }
+
+    .bio {
+        gap: none;
+        text-align: center;
+        height: 50vh;
+        width: 100%;
+        border-bottom:1px solid  #657786; 
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+    .bioName {
+        font-size: 4.5rem;
+        line-height:4.5rem;
+    }
+    .bioName span {
+        color: #1DA1F2;
+    }
+    .jobTitle{
+        line-height: 2rem;
+        font-size:1.2rem;
+        text-align: center;
     }
     .smallContainer{
         display:flex;
@@ -137,6 +156,12 @@ Code Starts
         width: 10px;
     }
 
+    .bio p {
+
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
     /*
 
      Sections Layout
@@ -144,15 +169,8 @@ Code Starts
     */
 
     .sectionWrapper {
-        width: 90%;
-        margin:.5rem auto;
+        width: 100%;
     }
-
-
-
-
-
-
 
     /*
 
@@ -167,31 +185,26 @@ Code Starts
         color: #E1E8ED;
         background-color: #14171A;
     }
-    .myName{
-        font-size: 2rem;
-        line-height: 100%;
-        text-align: right;
-    }
     
-    .dropButton {
+    .navButton {
         border: none;
         margin-top:.5rem;
         background-color: #14171A;
       }
     
-    .dropButton img {
+    .navButton img {
         background-color: #14171A;
         height: 30px;
     }
     
 
       
-    .dropDownContent a {
+    .navContent a {
         padding: 12px 16px;
         text-decoration: none;
       }
 
-    .dropDownContent li {
+    .navContent li {
         text-align: center;
         border-bottom: 1px solid black;
         font-size: 22px;
@@ -200,12 +213,12 @@ Code Starts
     }
 
 
-    .dropDownContent li {
+    .navContent li {
         opacity: 0; /* Initially hidden */
         transform: translateX(-100%); /* Initially outside the viewport */
         transition: opacity 0.5s, transform 0.5s;
       }
-      .dropDownContent li.slide-in {
+      .navContent li.slide-in {
         opacity: 1; /* Show the item */
         transform: translateX(0); /* Slide it in from the left */
       }
@@ -219,39 +232,23 @@ Code Starts
         font-size: 18px;
         line-height: 1.5rem;
     }
-    .mainBlurb{
-        margin: 0 auto;
-    }
+
     .nathanImage{
         margin: 0 auto;
         border-radius: 50%;
-        border: 1px solid black;
-    }
-
-    .mainBlurb h1, .jobTitle, .mainBlurb .locationIcon .mainBlurb h4 {
-        margin-top: .5rem;
-        text-align: center;
     }
 
 
     .locationIcon{
         margin: 0 .5rem;
     }
-    .mainBlurb h3{
-        margin-top: .5rem;
-    }
-    .mainBlurb h4{
-        text-align: center;
-    }
-    /*
+
+    /* 
 
      Sections Style Layout
 
     */
 
-    .sectionWrapper {
-        margin:.5rem auto;
-    }
     section h2 {
         font-weight: bolder;
         font-size:24px;
@@ -260,6 +257,10 @@ Code Starts
         margin: .25rem auto .5rem auto;
     }
 }
+
+
+/* /////////////////////////////////////////////////////////
+*/
 
 @media (min-width: 650px) {
     .superWrapper {
@@ -279,7 +280,7 @@ Code Starts
         flex-direction: column;
 
     }
-    .dropDown{
+    .nav{
         order: 2;
     }
     .mainBlurb{
@@ -289,37 +290,23 @@ Code Starts
         width: 70%;
         border-radius: 50%;
         display: block;
-        margin: 100px auto 25px auto;
-    }
-    .name2 {
-        text-align: center;
-        width: fit-content;
-        margin: 0 auto;
-        line-height: 2.5rem;
-        font-size: 2rem;
-        font-weight: bold;
+        margin: 150px auto 25px auto;
     }
 
     .locationIcon{
-        width: 10px;
-    }
-    .jobTitle{
-        text-align: center;
-        line-height: 2rem;
-        font-size:1.5rem;
-    }
-    .smallContainer {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        line-height: 2rem;
-        font-size:1.5rem;
-    }
-
-    .dropButton, .myName, .lastName{
         display: none;
     }
-    .dropDownContent{
+    .jobTitle{
+        display: none;
+    }
+    .smallContainer {
+        display: none;
+    }
+
+    .navButton, .myName{
+        display: none;
+    }
+    .navContent{
         line-height: 1.5rem;
         display: flex;
         flex-direction: column;
@@ -330,6 +317,10 @@ Code Starts
         min-height: 100vh;
         margin-top: 200px;
     }
+
+/* /////////////////////////////////////////////////////////
+*/
+
 }
 @media (min-width: 1100px){
     .leftWrapper {
