@@ -9,6 +9,7 @@
 </head>
 <body>
 
+
 <!--      Wrapps Everything              -->
     <div class = "superWrapper" id = "home">
 <!--      Wrapps Left Section              -->
@@ -22,9 +23,9 @@
     <!--      List Content Section              -->
                     <ul class = "navContent" id = "navContent">
                         <li><a href = '#home'>Home</a></li>
-                        <li><a href = ''>Projects</a></li>
-                        <li><a href = ''>Experience</a></li>
-                        <li><a href = ''>Education</a></li>
+                        <li><a href = '#projectsSection'>Projects</a></li>
+                        <li><a href = '#experienceSection'>Experience</a></li>
+                        <li><a href = '#educationSection'>Education</a></li>
                     </ul>
                 </nav>
 <!--      Photo title location Section              -->           
@@ -36,107 +37,80 @@
 
         <div class = "sectionWrapper rightWrapper">
  <!--      Bio             -->           
-            <section class = "bio">
+            <section class = "bioWrapper">
                 <h2 class = "bioName">Nathan <span>Cano<span></h2>
                 <h3 class = "jobTitle">Software Developer</h3>
                 <h3 class = "email">nathanscano@icloud.com</h3>
-                <div class = 'smallContainer'>
+                <div class = 'img-loc'>
                     <img src = "assets/location-dot-solid.svg" class = "locationIcon">
                     <h4>Los Angeles, Ca</h4>
                 </div>
-            </section>
- <!--      Projects             -->           
-            <section>
-                <h2 id = "projects">Projects</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                <p class = "bioBlurb">
+                    "I am a software developer and clinician on a mission to have a scalable impact on those receiving and providing addiction treatment and mental health services."
                 </p>
             </section>
+ <!--      Projects             -->           
+            <section class = "projectsSection" id = "projectsSection">
+                <h2 id = "projectsTitle">Projects</h2>
+
+            </section>
  <!--      Experience             -->           
-            <section>
-                <h2 id = "experience">Experience</h2>
+            <section class = "experienceSection" id = "experienceSection">
                 <div class = "resParentCont">
-                    <div class = "r-left">
-                        <h3>Open Source Project Contributor</h3>
-                        <span>Project Name</span>
-                        <ul class = "res-bullet-points">
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit..</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-                        </ul>
-                    </div>
-                    <div class = "r-right">
-                        <span>October 2023 - Present</span>
-                    </div>
+                    <h2 >Experience</h2>
+                    <h3>Open Source Project Contributor</h3>
+                    <span>October 2023 - Present</span>
+                    <span>Project Name</span>
+                    <ul class = "res-bullet-points">
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit..</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    </ul>
                 </div>
                 <div class = "resParentCont">
-                    <div class = "r-left">
-                        <h3>Freelance Web Developer</h3>
-                        <span>Self-Employed</span>
-                        <ul class = "res-bullet-points">
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit..</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-                        </ul>
-                    </div>
-                    <div class = "r-right">
-                        <span>September 2023 - Present</span>
-                    </div>
+                    <h3>Freelance Web Developer</h3>
+                    <span>September 2023 - Present</span>
+                    <span>Self-Employed</span>
+                    <ul class = "res-bullet-points">
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit..</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    </ul>
                 </div>
                 <div class = "resParentCont">
-                <div class = "resParentCont">
-                    <div class = "r-left">
-                        <h3>Program Director</h3>
-                        <span>Journey Hillside Tarzana</span>
-                        <ul class = "res-bullet-points" >
-                            <li>Responsible for the acquisition of numerous facility accredidations and certifications, including the Joint Commission, CARF-ASAM and DHCS compliance audits.</li>
-                            <li>Directed and supervised the administrative activities of all facility operations, including a team of 11 staff members.</li>
-                            <li>Create a clinical program of recovery and conduct recovery groups based on the following topics: Communication Skills, cognitive-behavioral interventions, relapse prevention, coping skills, chemical dependency, ACT principles, the 12 steps and more. </li>
-                        </ul>
-                    </div>
-                    <div class = "r-right">
-                        <span>August 2019 - Present</span>
-                    </div>
+                    <h3>Program Director</h3>
+                    <span>August 2019 - Present</span>
+                    <span>Journey Hillside Tarzana</span>
+                    <ul class = "res-bullet-points" >
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    </ul>
                 </div>
             </section>
  <!--      Education             -->           
-            <section>
-                <h2 id = "education">Education</h2>
-                <div class = "resParentCont">
-                    <div class = "r-left">
-                        <h3>M.S. Addiction Counseling</h3>
-                        <span> Grand Canyon University</span>
-                    </div>
-                    <div class = "r-right">
-                        <span>February 2023</span>
-                    </div>
+            <section class = "educationSection" id = "educationSection">
+                <h2 >Education</h2>
+                <div class = "edCont">
+                    <h3>M.S. Addiction Counseling </h3>
+                    <h4 class = "date">February 2023</h4>
+                    <span> Grand Canyon University</span>
                 </div>
-                <div class = "resParentCont">
-                    <div class = "r-left">
-                        <h3>B.A. Honors in Psychology</h3>
-                        <span>California State University, Northridge</span>
-                    </div>
-                    <div class = "r-right">
-                        <span> December 2019</span>
-                    </div>
+                <div class = "edCont">
+                    <h3>B.A. Honors in Psychology </h3>
+                    <h4 class = "date"> December 2019</h4>
+                    <span>California State University, Northridge</span>
                 </div>
-                <div class = "resParentCont">
-                    <div class = "r-left">
-                        <h3>Anger Management - Certificate</h3>
-                        <span>Century Anger Management</span>
-                    </div>
-                    <div class = "r-right">
-                        <span>November 2023</span>
-                    </div>
+                <div class = "edCont">
+                    <h3>Anger Management - Certificate </h3>
+                    <h4 class = "date">November 2023</h4>
+                    <span>Century Anger Management</span>
                 </div>
-                <div class = "resParentCont">
-                    <div class = "r-left">
-                        <h3>Addiction Studies - Certificate</h3>
-                        <span>Breining Institute</span>
-                    </div>
-                    <div class = "r-right">
-                        <span>February 2019</span>
-                    </div>
+                <div class = "edCont">
+                    <h3>Addiction Studies - Certificate </h3>
+                    <h4 class = "date">February 2019</h4>
+                    <span>Breining Institute</span>
+                </div>
             </section>
         </div>
     </div>
