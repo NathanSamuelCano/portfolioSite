@@ -396,12 +396,16 @@ Code Starts
         background-color: #F5F8FA;
     }
     .leftWrapper {
-        min-width: 30%;
+        width: 30%;
         min-height: 100%;
         background-color: #AAB8C2;
         min-height: vh;
         margin-bottom: 0;
-        display:flex;
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
         flex-direction: column;
 
     }
@@ -438,9 +442,26 @@ Code Starts
         align-items: center;
     }
     .rightWrapper {
+        margin-left: 30%;
+        padding: 0 5%;
         min-width: 70%;
         min-height: 100vh;
         margin-top: 200px;
+        border: 1px solid red;
+
+
+    }
+
+    .projectParentCont{
+        width: 100%;
+        display:flex;
+        flex-direction:row;
+        align-items: space-between;
+        border: 2px solid black;
+    }
+
+    .projectParentCont div {
+        border: 1px solid red;
     }
 
 /* /////////////////////////////////////////////////////////
@@ -449,10 +470,12 @@ Code Starts
 }
 @media (min-width: 1100px){
     .leftWrapper {
-        min-width: 25%;
+        width: 25%;
     }
     .rightWrapper {
-        min-width: 75%;
+        margin-left: 25%;
+
+        width: 75%;
 
     }
 }
