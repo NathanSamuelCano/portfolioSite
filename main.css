@@ -53,6 +53,9 @@ table {
 *{
     box-sizing: border-box;
 }
+.topWrapper {
+    z-index: 99999
+}
 /* /////////////////////////////////////////////////////////
 
 Code Starts
@@ -94,14 +97,26 @@ Code Starts
         position: absolute;
         top: 80px;
         min-width: 100%;
-        z-index: 1;
+        z-index: 99999;
       }
+    
+    .displayView {
+        display:none;
+    }
       
     .navContent a {
         display: block;
       }
 
+      .sectionWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;;
+      }
 
+      .sectionWrapper section {
+        width: 90%;
+      }
       
     /*
 
@@ -251,7 +266,9 @@ Code Starts
 
     section h2 {
         font-weight: bolder;
-        font-size:24px;
+        text-align: center;
+        font-size:12vw;
+        line-height: 18vw
     }
     section p {
         margin: .25rem auto .5rem auto;
@@ -266,15 +283,85 @@ Code Starts
     .projectsSection, .experienceSection{
         width: 100%;
         padding-top: 10vh;
-        height: 90vh;
+        min-height: 90vh;
+    }
+
+    .projectParentCont {
+        width: 100%;
+    }
+
+    .projectParentCont div {
+        max-width: 100%;
+        height: auto;
+        border-bottom: 1px solid #657786;
+        padding: 1rem 0;
+    }
+
+    .projectParentCont img {
+        display: block;
+        width: 90%;
+        height: auto;
+        margin: 1rem auto;
+    }
+
+    .projectParentCont h3, a {
+        text-align: center;    
+    }
+    .projectParentCont a {
+        display: block;
+        text-decoration: none;
+        color: #1DA1F2;
+        font-weight: bold;
+    }
+    .projectParentCont h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    .projectParentCont p {
+        text-align: center;
+        width: 80%;
+    }
+    .comp {
+        font-style: italic;
+    }
+    .dates {
+        color: #1DA1F2;
+        font-weight: bold;
+    }
+    .experienceSection h3{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    .experienceSection span {
+        display: block;
+        font-size: 1.1rem;
+    }
+
+    .resParentCont{
+        border-bottom: 1px solid #AABBC2;
+        padding-bottom: 1rem;
+    }
+    .resParentCont:not(:first-child){
+        margin-top: 1.5rem;
     }
     .educationSection{
         width: 100%;
         padding-top:10vh;
         height: 100vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+    .edCont:first-of-type{
+        border-top: 1px solid #AAB8C2;
     }
     .edCont {
         line-height:1.7rem;
+        border-bottom: 1px solid #AAB8C2;
+        padding: 1rem;
     }
 
     .edCont h3 {

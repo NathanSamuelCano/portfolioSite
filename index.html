@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "main.css">
-    <title>Document</title>
+    <title>Nathan Cano - Software Developer</title>
 </head>
 <body>
 
@@ -21,7 +21,7 @@
                         <button class = "navButton" id = "navButton"><img src = "assets/navIcon.svg"></button>
                     </div>
     <!--      List Content Section              -->
-                    <ul class = "navContent" id = "navContent">
+                    <ul class = "navContent displayView" id = "navContent">
                         <li><a href = '#home'>Home</a></li>
                         <li><a href = '#projectsSection'>Projects</a></li>
                         <li><a href = '#experienceSection'>Experience</a></li>
@@ -52,39 +52,60 @@
  <!--      Projects             -->           
             <section class = "projectsSection" id = "projectsSection">
                 <h2 id = "projectsTitle">Projects</h2>
-
+                <div class = "projectParentCont">
+                    <div>
+                        <h3>Project name</h3>
+                        <img src = "assets/giphy.gif" alt = "Project Gif">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit cupiditate facilis natus iste dolore? Dolore!</p>
+                        <a href = "" >Source Code</a>
+                    </div>
+                    <div>
+                        <h3>Project name</h3>
+                        <img src = "assets/giphy.gif" alt = "Project Gif">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit cupiditate facilis natus iste dolore? Dolore!</p>
+                        <a href = "" >Source Code</a>
+                    </div>
+                    <div>
+                        <h3>Project name</h3>
+                        <img src = "assets/giphy.gif" alt = "Project Gif">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit cupiditate facilis natus iste dolore? Dolore!</p>
+                        <a href = "" >Source Code</a>
+                    </div>
+                </div>
             </section>
  <!--      Experience             -->           
             <section class = "experienceSection" id = "experienceSection">
                 <div class = "resParentCont">
                     <h2 >Experience</h2>
                     <h3>Open Source Project Contributor</h3>
-                    <span>October 2023 - Present</span>
-                    <span>Project Name</span>
-                    <ul class = "res-bullet-points">
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit..</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <span class = "comp">Project Name</span>
+                    <span class = "dates">October 2023 - Present</span>
+                    <ul class="res-bullet-points">
+                        <li>Enhanced project growth, functionality, and community engagement through discussions, technical support, and documentation.</li>
+                        <li>Optimized code and improved software performance for faster and more reliable results.</li>
+                        <li>Demonstrated unwavering commitment, actively contributing to the success of multiple open-source projects.</li>
                     </ul>
                 </div>
                 <div class = "resParentCont">
                     <h3>Freelance Web Developer</h3>
-                    <span>September 2023 - Present</span>
-                    <span>Self-Employed</span>
-                    <ul class = "res-bullet-points">
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit..</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <span class = "comp">Self-Employed</span>
+                    <span class = "dates">September 2023 - Present</span>
+                    <ul class="res-bullet-points">
+                        <li>Designed user-friendly websites with HTML, CSS, JavaScript, and responsive design.</li>
+                        <li>Collaborated closely with clients to align projects with their business objectives, consistently achieving high client satisfaction.</li>
+                        <li>Managed multiple projects, meeting tight deadlines, and showcasing strong project management.</li>
+                        <li>Provided post-launch support, fostering lasting client relationships and securing repeat business.</li>
                     </ul>
                 </div>
                 <div class = "resParentCont">
                     <h3>Program Director</h3>
-                    <span>August 2019 - Present</span>
-                    <span>Journey Hillside Tarzana</span>
+                    <span class = "comp">Journey Hillside Tarzana</span>
+                    <span class = "dates">August 2019 - Present</span>
                     <ul class = "res-bullet-points" >
-                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Designed, coded, and deployed software solutions to improve staff training, to optimize leadership time management. .</li>
+                        <li>Applied leadership skills to foster collaboration within multidisciplinary teams to improve client care.</li>
+                        <li>Utilized data analysis skills for data-driven decision making and program improvement.</li>
+                        <li>Collaborated with cross-functional teams to ensure alignment with project goals.</li>
                     </ul>
                 </div>
             </section>
@@ -92,12 +113,14 @@
             <section class = "educationSection" id = "educationSection">
                 <h2 >Education</h2>
                 <div class = "edCont">
-                    <h3>M.S. Addiction Counseling </h3>
+                    <h3 class = "degree">Master of Science </h3>
+                    <h3>Addiction Counseling </h3>
                     <h4 class = "date">February 2023</h4>
                     <span> Grand Canyon University</span>
                 </div>
                 <div class = "edCont">
-                    <h3>B.A. Honors in Psychology </h3>
+                    <h3 class = "degree">Bachelor of Arts</h3> 
+                    <h3>Honors in Psychology</h3>
                     <h4 class = "date"> December 2019</h4>
                     <span>California State University, Northridge</span>
                 </div>
