@@ -1,11 +1,6 @@
 /*
-
 CSS Reset 
-
 */
-
-
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -33,6 +28,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    font-family: 'Roboto Serif', serif;
 }
 ol, ul {
 	list-style: none;
@@ -49,42 +45,29 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 *{
     box-sizing: border-box;
 }
 .topWrapper {
     z-index: 99999
 }
-/* /////////////////////////////////////////////////////////
-
-Code Starts
-
-*/
-@media screen and (max-width: 275px){
-
-    .topWrapper .myName {
-        font-size: 28px;
-    }
+html {
+    background-color: #E1E8ED;
+    font-size: 18px;
 }
 
-/* /////////////////////////////////////////////////////////
-*/
 @media screen and (max-width: 649px){
-
+    body {
+        line-height: 1.5rem;
+    }
     /*
-
-    Navigation Section Layout
-
+    Navigation Section 
     */
-
     .nav {
         margin: 0 auto 0 auto;
         position: fixed;
         width: 100%;
     }
-
-
     .topWrapper {
         display: flex;
         justify-content: space-between;
@@ -92,45 +75,36 @@ Code Starts
         height: 10vh;
         width: 100%;
     }
-
     .navContent {
         position: absolute;
         top: 10vh;
         min-width: 100%;
         z-index: 99999;
       }
-      .navContent a {
+    .navContent a {
         text-decoration: none;
         color: black;
-      }
-      .navContent a:hover {
-        color: #1DA1F2;
-      }
-    
-    .displayView {
-        display:none;
-    }
-      
-    .navContent a {
         display: block;
       }
 
-      .sectionWrapper {
+    .navContent a:hover {
+        color: #1DA1F2;
+      }
+    .displayView {
+        display:none;
+    }
+    .sectionWrapper {
         display: flex;
         flex-direction: column;
-        align-items: center;;
+        align-items: center;
+        width: 100%;
       }
-
-      .sectionWrapper section {
+    .sectionWrapper section {
         width: 90%;
       }
-      
     /*
-
-    Main Blurb Section Layout
-
+    Main Blurb Section 
     */
-
     .imageCont{
         display: block;
         padding-top: 10vh;
@@ -143,9 +117,8 @@ Code Starts
     .nathanImage{
         height: 80%;;
         display: block;
-        border: 10px solid #657786;
+        border: .5rem solid #657786;
     }
-
     .bioWrapper {
         gap: none;
         text-align: center;
@@ -156,7 +129,6 @@ Code Starts
         flex-direction: column;
         justify-content: flex-start;
         padding: 0 5%;
-        
     }
     .bioName {
         font-size: 4.5rem;
@@ -175,102 +147,56 @@ Code Starts
         justify-content: center;
     }
     .locationIcon{
-        width: 10px;
+        width: .55rem;
     }
-
     .bioBlurb {
-
         font-size: 1.2rem;
         line-height: 1.8rem;
     }
-
-    /*
-
-     Sections Layout
-
-    */
-
-    .sectionWrapper {
-        width: 100%;
+    .nathanImage{
+        margin: 0 auto;
+        border-radius: 50%;
     }
-
+    .locationIcon{
+        margin: 0 .5rem;
+    }
     /*
-
      Nav Menu Style 
-
     */
-    html {
-        background-color: #E1E8ED;
-        font-size: 18px;
-    }
     .topWrapper{
         color: #E1E8ED;
         background-color: #14171A;
     }
-    
     .navButton {
         border: none;
         margin-top:.5rem;
         background-color: #14171A;
       }
-    
     .navButton img {
         background-color: #14171A;
-        height: 30px;
+        height: 1.7rem;
     }
-    
-
-      
     .navContent a {
-        padding: 12px 16px;
+        padding: .67rem .89rem;
         text-decoration: none;
       }
-
     .navContent li {
         text-align: center;
         border-bottom: 1px solid black;
         font-size: 1.5rem;
         line-height: 2rem;
         background-color: #F5F8FA;
-    }
-
-
-    .navContent li {
         opacity: 0; /* Initially hidden */
         transform: translateX(-100%); /* Initially outside the viewport */
         transition: opacity 0.5s, transform 0.5s;
-      }
+    }
       .navContent li.slide-in {
         opacity: 1; /* Show the item */
         transform: translateX(0); /* Slide it in from the left */
       }
-
-    /*
-
-    Main Blurb Style 
-
-    */
-    body {
-        font-size: 18px;
-        line-height: 1.5rem;
-    }
-
-    .nathanImage{
-        margin: 0 auto;
-        border-radius: 50%;
-    }
-
-
-    .locationIcon{
-        margin: 0 .5rem;
-    }
-
     /* 
-
      Sections Style Layout
-
     */
-
     section h2 {
         font-weight: bolder;
         text-align: center;
@@ -282,11 +208,8 @@ Code Starts
     }
 }
     /* 
-
      Sections Style Layout
-
     */
-
     .projectsSection, .experienceSection{
         width: 100%;
         padding-top: 10vh;
@@ -300,25 +223,21 @@ Code Starts
         font-size: 1.5rem;
         line-height: 2.5rem;
     }
-
     .projectParentCont {
         width: 100%;
     }
-
     .projectParentCont div {
         max-width: 100%;
         height: auto;
         padding: 1rem 0;
         border-bottom: 1px solid #AABBC2
     }
-
     .projectParentCont img {
         display: block;
         width: 90%;
         height: auto;
         margin: 1rem auto;
     }
-
     .projectParentCont h3, a {
         text-align: center;    
     }
@@ -332,7 +251,6 @@ Code Starts
         font-size: 1.5rem;
         font-weight: bold;
     }
-    
     .projectParentCont p {
         text-align: center;
         width: 80%;
@@ -348,12 +266,10 @@ Code Starts
         font-size: 1.3rem;
         font-weight: bold;
     }
-
     .experienceSection span {
         display: block;
         font-size: 1.1rem;
     }
-
     .resParentCont{
         border-bottom: 1px solid #AABBC2;
         padding-bottom: 1rem;
@@ -378,7 +294,6 @@ Code Starts
         border-bottom: 1px solid #AAB8C2;
         padding: 1rem;
     }
-
     .edCont h3 {
         font-weight: bold;
         font-size: 1.5rem;
@@ -388,20 +303,14 @@ Code Starts
         font-weight: bold;
         font-size: 1rem;
     }
-    
     .res-bullet-points{
         list-style-type:disc;	
-        margin-top:10px;
+        margin-top:.55rem;
     }
-    
     .res-bullet-points li{
-        margin-top: 5px;
-        margin-left: 30px;
+        margin-top: .28rem;
+        margin-left: 1.67rem;
     }
-
-/* /////////////////////////////////////////////////////////
-*/
-
 @media (min-width: 650px) {
     .projectSection,  .experienceSection, .educationSection{
         font-size: 1.5rem;
@@ -457,7 +366,6 @@ Code Starts
         left: 0;
         right: 0;
         flex-direction: column;
-
     }
     .nav{
         order: 2;
@@ -468,11 +376,10 @@ Code Starts
     .nathanImage{
         width: 70%;
         border-radius: 50%;
-        border: 9px solid #657786;
+        border: .5rem solid #657786;
         display: block;
-        margin: 150px auto 25px auto;
+        margin: 8.33rem auto 1.389rem auto;
     }
-
     .locationIcon{
         height: 1rem;
         width: auto;
@@ -488,8 +395,6 @@ Code Starts
         font-size: 2rem;
         line-height: 3rem;
     }
-
-
     .navButton, .myName{
         display: none;
     }
@@ -515,11 +420,11 @@ Code Starts
         min-height: 100vh;
     }
     .bioWrapper {
-        height: 100vh;
+        min-height: 100vh;
         border-bottom: 1px solid #AABBC2;
     }
     .bioName {
-        padding-top: 250px;
+        padding-top: 13.8rem;
         font-size:6rem;
         font-weight: bold;
     }
@@ -548,7 +453,6 @@ Code Starts
         align-items: space-between;
         max-height: 100%;
     }
-
     .projectParentCont div {
         max-height: 100%;
     }
@@ -560,17 +464,12 @@ Code Starts
         font-size: 2rem !important;
         line-height: 4rem;
     }
-
     .edCont h4 {
         font-size: 1.25rem;
         font-weight: bold;
     }
-/* /////////////////////////////////////////////////////////
-*/
-
 }
 @media (min-width: 1100px){
-
     .leftWrapper {
         width: 25%;
     }
@@ -578,8 +477,6 @@ Code Starts
         margin-left: 25%;
         width: 75%;
     }
-
-        
     .projectParentCont{
         max-width: 100%;
         height: 100%;
@@ -593,21 +490,3 @@ Code Starts
         max-width: 50%;
     }
 }
-
-
-
-    /*
-
-    Blue #1DA1F2
-
-    Black #14171A
-
-    Dark Gray #657786
-
-    Light Gray #AAB8C2
-
-    Extra Light Gray #E1E8ED
-
-    Extra Extra light gray #F5F8FA
-
-    */
